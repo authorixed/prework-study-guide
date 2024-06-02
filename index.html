@@ -11,12 +11,12 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="https://gifdb.com/images/high/umiko-ahagon-desktop-programming-eg5f8g2281ekfhde.gif" alt="Coding girl" />
-      <h2>✨ Open the Console to See What's Happening ✨</h2>
+      <h2>Open the console to pick a subject!</h2>
     </header>
     <main>
       <section class="card" id="html-section">
           <h2>HTML</h2>
-          <ul>
+          <ul class="ul">
 
             <li>The head element contains information about the webpage.</li>
               <ul>
@@ -56,7 +56,22 @@
               <li>Semantic element cheat sheet:</li>
               <li style="margin-right: 1700px;"><img src="./assets/img_sem_elements.gif" alt="semantic elements" style="width: 300px;height: auto;"></li>
             <li>To move the picture above how I did, i used style="margine=right:"xxpx" WITHIN the first li</li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">HTML cheatsheet></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">HTML cheatsheet </a></li>
+            <li><b>INPUT EXAMPLE!</b></li>
+              <ul>
+                &ltlabel for="name"&gt;Name (3-16 characters) : <br>
+                &lt/label&gt; 
+                <br>
+                &ltinput type="text" id="name" name="name" <br>
+                required minlength="3" maxlength="16" size="10" <br> /&gt;
+                <br>
+                <li>Example of above code working together!</li>
+                <label for="name">Name (3-16 characters) : </label>
+                <br>
+                <input type="text" id="name" name="name" 
+                required minlength="3" maxlength="16" size="10" />
+                
+              </ul>
             </ul>
         </section>
       </section>
@@ -70,14 +85,24 @@
           <li>Order from inside out: content, padding, border, margin.</li>
           <li>Can add CSS rules for two selectors by using a comma. example:</li>
             <ul>
-              <li>header, <br> footer</li>
+              <li>header, <br> footer;</li>
             </ul>
           <li>display: block; to make an element a block.</li>
           <li>Static position: Normal flow, default position.</li>
           <li>Relative position: Normal flow but is offset based on provided value.</li>
           <li>Absolite position: element removed from normal flow, final position is relative to positioned parent.</li>
           <li>FIxed position: element removed from normal flow, relativce to viewport and determined by values.</li>
+          <li>The * selector means <b>UNIVERSAL</b> selector. Anything in this will apply to everything. Usually done to reset to defaults for full control.</li>
+            <ul>
+                <li>usually used by adding margin:0; and padding:0;</li>
+                <li>will <b>NOT</b>override defined css elements, but will override html.</li>
+            </ul>
+          <li>display: inline; allows elements to show to the left and right to each other <b>on the same line</b></li>
+          <li>header: fixed; makes the header follow as you scroll, it'll stay at the top of your page constantly.</li>
+          <li>CSS comment out is /* */</li>
         </ul>
+        
+
       </section>
       
       <section class="card" id="git-section">

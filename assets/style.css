@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    line-height: 1.5;
    }
    
    header,
@@ -9,6 +10,7 @@
     height: 120px;
     background-color: rgb(16, 0, 22);
     color: white;
+    padding: 10px;
    }
    
    h1,
