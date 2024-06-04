@@ -70,8 +70,10 @@
                 <br>
                 <input type="text" id="name" name="name" 
                 required minlength="3" maxlength="16" size="10" />
-                
+                <br>
+                <li>This element is very useful, as you create user input and the type="text" is VERY easily hotswappable! </li>
               </ul>
+              <li>Keyboard shortcut for commenting out code: CTRL + /</li>
             </ul>
         </section>
       </section>
@@ -100,6 +102,55 @@
           <li>display: inline; allows elements to show to the left and right to each other <b>on the same line</b></li>
           <li>header: fixed; makes the header follow as you scroll, it'll stay at the top of your page constantly.</li>
           <li>CSS comment out is /* */</li>
+          <li>How to make a site conform to different screen sizes!</li>
+            <ul>
+              @media screen and (max-width: 992px) { <br>
+              <li>This element says for all screen sizes up to 992px. Then add any elements! </li>
+              <li>Make sure you go from <b>BIGGEST</b>to <b>SMALLEST</b>size!</li>
+            </ul>
+          <li>@media print  { sets the styles ONLY for printed content.</li>
+          <li>flex-wrap: wrap; Very important code! Does the math in the background to make the elements on the screen fit!</li>
+            <ul>
+              <li>Will do its best to make the elements look good, it "flexes" to the screen! It will eventually wrap the elements under if they don't fit.</li>
+            </ul>
+          <li>flex-shrink: sets how <b>small</b> an element can get if there isn't enough space</li>
+          <li>flex-grow: sets how <b>big</b> an element can get if there is space for it to take</li>
+          <li>flex-basis: sets the initial size of a content box unless specified otherwise!</li>
+            <ul>
+              Examples: <br>
+              flex-basis: auto;
+              <br>
+              flex-basis: 0;
+              <br>
+              flex-basis: 200px;
+            </ul>
+          <li>New element! justify-content: ;</li>
+            <ul>
+              <li>Has TONS of options, very customizable and able to change the elements easily.</li>
+            </ul>
+          <li>Using the &gt tag, (ie: article div &gt * ) means it has to be DIRECTLY inside that div for the style to apply.</li>
+          <li>li:nth-child(even) or (odd). dynamic selector? Reads I want to apply the style to list items to even or odd. Can substitude even/odd for number.</li>
+          <li>Targeting selectors are cool! ::(whatever) help target specific elements.</li>
+            <ul>
+              <li>You can actually target attibutes through their href!</li>
+              <li>ex: a[href$='.css']</li>
+              <li>This code targets all files that end with .css on the page.</li>
+              <li></li>
+            </ul>
+          <li>Brackets [] are nice to target very specific elements as well.</li>
+          <li>You can create your own variables in css by using :root {</li>
+            <ul>
+              create the variables by using '--' before it
+              <li>ex: --dark: whatever color</li>
+              <li>helpful to change lots of things at once instead of having to indivitually change things</li>
+              <li>making a --border-radius: 50px can be used as one or multiple of the border radius px size. </li>
+                <ul>
+                  <li>ex: <br></li>
+                    var(border-radius) var(border-radius) 0 0 <br>
+                    this code means the left and right will be 50px, the top and bottom will be 0px.
+                </ul>
+            </ul>
+          
         </ul>
         
 
